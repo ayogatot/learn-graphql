@@ -1,0 +1,14 @@
+{
+  "name": "learn-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Azerino Yogananta Gatot Subroto <azerino25@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "graphql": "^14.1.1"
+  }
+}
