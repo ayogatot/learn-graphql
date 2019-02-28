@@ -5,13 +5,25 @@ var {buildSchema} = require('graphql');
 var schema = buildSchema(`
   type Query {
     hello: String
+    random: Float
+    randomNumber: Int 
   }
 `);
 
 var root = {
+  
   hello: () => {
     return 'Hello world!';
   },
+
+  random: () => {
+    return Math.random();
+  },
+
+  randomNumber: () => {
+    return 10;
+  }
+
 };
 
 var app = express();
